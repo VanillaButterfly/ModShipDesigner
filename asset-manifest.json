@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b47a038.chunk.css",
-    "main.js": "/static/js/main.0b04bbb5.chunk.js",
-    "main.js.map": "/static/js/main.0b04bbb5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0d431dc8.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0d431dc8.js.map",
-    "static/js/2.2de1c9e9.chunk.js": "/static/js/2.2de1c9e9.chunk.js",
-    "static/js/2.2de1c9e9.chunk.js.map": "/static/js/2.2de1c9e9.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.5b47a038.chunk.css.map": "/static/css/main.5b47a038.chunk.css.map",
-    "static/js/2.2de1c9e9.chunk.js.LICENSE.txt": "/static/js/2.2de1c9e9.chunk.js.LICENSE.txt"
+    "main.css": "/ModShipDesigner/static/css/main.5b47a038.chunk.css",
+    "main.js": "/ModShipDesigner/static/js/main.7d03b67d.chunk.js",
+    "main.js.map": "/ModShipDesigner/static/js/main.7d03b67d.chunk.js.map",
+    "runtime-main.js": "/ModShipDesigner/static/js/runtime-main.5b5a5a7a.js",
+    "runtime-main.js.map": "/ModShipDesigner/static/js/runtime-main.5b5a5a7a.js.map",
+    "static/js/2.2de1c9e9.chunk.js": "/ModShipDesigner/static/js/2.2de1c9e9.chunk.js",
+    "static/js/2.2de1c9e9.chunk.js.map": "/ModShipDesigner/static/js/2.2de1c9e9.chunk.js.map",
+    "index.html": "/ModShipDesigner/index.html",
+    "static/css/main.5b47a038.chunk.css.map": "/ModShipDesigner/static/css/main.5b47a038.chunk.css.map",
+    "static/js/2.2de1c9e9.chunk.js.LICENSE.txt": "/ModShipDesigner/static/js/2.2de1c9e9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d431dc8.js",
+    "static/js/runtime-main.5b5a5a7a.js",
     "static/js/2.2de1c9e9.chunk.js",
     "static/css/main.5b47a038.chunk.css",
-    "static/js/main.0b04bbb5.chunk.js"
+    "static/js/main.7d03b67d.chunk.js"
   ]
 }
