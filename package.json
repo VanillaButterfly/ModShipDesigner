@@ -18,7 +18,7 @@
   "devDependencies": {
     "react-scripts": "latest"
   },
-  "homepage": "https://vanillabutterfly.github.io/verdyShipDesigner/",
+  "homepage": "https://hoishipdesigner.github.io/",
   "browserslist": {
     "production": [
       ">0.2%",
