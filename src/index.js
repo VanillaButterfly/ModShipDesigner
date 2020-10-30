@@ -14,7 +14,7 @@ class App extends Component {
   set = 0;
 
   //Technology summary table. Contains the ids of each technology checkbox
-  tech_table = ["magnetic_detonator", "homing_torpedo", "basic_light_shell", "improved_light_shell", "basic_medium_shell", "improved_medium_shell", "basic_heavy_shell", "improved_heavy_shell", "bracket_shooting", "ladder_shooting", "shell_dyes", "improved_submarine_mine_laying"]
+  tech_table = ["magnetic_detonator", "torpex", "homing_torpedo", "basic_light_shell", "improved_light_shell", "basic_medium_shell", "improved_medium_shell", "basic_heavy_shell", "improved_heavy_shell", "improved_submarine_mine_laying"]
 
   /*Hull IDs
     0 - DD
@@ -250,29 +250,49 @@ class App extends Component {
       ship_depth_charge_1:-0.01, ship_depth_charge_2:-0.01, ship_depth_charge_3:-0.01, ship_depth_charge_4:-0.01,
       ship_airplane_launcher:-0.01,
       ship_small_deck_space:-0.05,
-      ship_deck_space:-0.15},
+      ship_deck_space:-0.15,
+      mediterranean_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     naval_range : {ship_unavailable_space:-0.05,
       light_ship_range_engine_1:0.025, light_ship_range_engine_2:0.05, light_ship_range_engine_3:0.075, light_ship_range_engine_4:0.1, light_ship_perf_engine_2:-0.05, light_ship_perf_engine_3:-0.1, light_ship_perf_engine_4:-0.15,
       medium_ship_range_engine_1:0.025, medium_ship_range_engine_2:0.05, medium_ship_range_engine_3:0.075, medium_ship_range_engine_4:0.1, medium_ship_perf_engine_2:-0.05, medium_ship_perf_engine_3:-0.1, medium_ship_perf_engine_4:-0.15,
       heavy_ship_range_engine_1:0.025, heavy_ship_range_engine_2:0.05, heavy_ship_range_engine_3:0.075, heavy_ship_range_engine_4:0.1, heavy_ship_perf_engine_2:-0.05, heavy_ship_perf_engine_3:-0.1, heavy_ship_perf_engine_4:-0.15,
       sub_ship_engine_2:-0.05, sub_ship_engine_3:-0.1, sub_ship_engine_4:-0.15,
       ship_extra_fuel_tank:0.2,
-      ship_extra_fuel_tank_sub:0.2},
+      ship_extra_fuel_tank_sub:0.2,
+      pacific_fleet_naval_manufacturer:{CV:0.2, BB:0.2, CVL:0.2, CA:0.2, CL:0.2, DD:0.2, SS:0.2},
+      coastal_defence_naval_manufacturer:{CV:-0.2, BB:-0.2, CVL:-0.2, CA:-0.2, CL:-0.2, DD:-0.2, SS:-0.2}},
     max_organisation : {},
     max_strength : {ship_unavailable_space:-0.05,
       reinforced_structure:0.2,
-      ship_unarmored_hangar:-0.1},
+      ship_unarmored_hangar:-0.1,
+      atlantic_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
+      battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     reliability : {damage_control_system_1:0.1, damage_control_system_2:0.2, damage_control_system_3:0.3,
       top_heavy:-0.1},
     manpower : {ship_anti_air_1:0.1, ship_anti_air_2:0.1, ship_anti_air_3:0.1, ship_anti_air_4:0.1},
     carrier_size : {ship_unarmored_hangar:0.2},
     lg_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
-      ship_fire_control_radar_1:0.1, ship_fire_control_radar_2:0.2},
+      ship_fire_control_radar_1:0.1, ship_fire_control_radar_2:0.2,
+      battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
+      coastal_defence_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
+      Light_shell_1:{CV:0.05, BB:0.05, CVL:0.05, CA:0.05, CL:0.05, DD:0.05},
+      Light_shell_2:{CV:0.05, BB:0.05, CVL:0.05, CA:0.05, CL:0.05, DD:0.05},
+      Medium_shell_1:{CL:0.05},
+      Medium_shell_2:{CL:0.05}},
     lg_armor_piercing : {},
     hg_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
-      ship_fire_control_radar_1:0.1, ship_fire_control_radar_2:0.2},
+      ship_fire_control_radar_1:0.1, ship_fire_control_radar_2:0.2,
+      battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
+      coastal_defence_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
+      Medium_shell_1:{CA:0.05},
+      Medium_shell_2:{CA:0.05},
+      Heavy_shell_1:{BB:0.05},
+      Heavy_shell_2:{BB:0.05}},
     hg_armor_piercing : {},
-    torpedo_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2},
+    torpedo_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
+      Torpedo_1:{CA:0.3, CL:0.3, DD:0.3, SS:0.3},
+      Torpedo_2:{CA:0.3, CL:0.3, DD:0.3, SS:0.3},
+      Torpedo_3:{CA:0.3, CL:0.3, DD:0.3, SS:0.3}},
     sub_attack : {},
     armor_value : {},
     anti_air_attack : {ship_anti_air_1:0.1, ship_anti_air_2:0.15, ship_anti_air_3:0.2, ship_anti_air_4:0.25,
@@ -280,12 +300,14 @@ class App extends Component {
       ship_fire_control_radar_1:0.1, ship_fire_control_radar_2:0.2},
     fuel_consumption : {},
     surface_visibility : {ship_unavailable_space:-0.05,
-      ship_sub_snorkel_1:0.1, ship_sub_snorkel_2:0.1},
-    surface_detection : {},
+      ship_sub_snorkel_1:0.1, ship_sub_snorkel_2:0.1,
+      convoy_escort_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
+    surface_detection : {raiding_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     sub_visibility : {sub_ship_engine_2:-0.2, sub_ship_engine_3:-0.4, sub_ship_engine_4:-0.6,
-      ship_sub_snorkel_1:-0.05, ship_sub_snorkel_2:-0.1},
-    sub_detection : {},
-    mines_planting : {},
+      ship_sub_snorkel_1:-0.05, ship_sub_snorkel_2:-0.1,
+      raiding_fleet_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
+    sub_detection : {convoy_escort_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
+    mines_planting : {Mines_1:{SS:0.5}},
     mines_sweeping : {},
     build_cost_ic : {ship_light_armor:0.1,
       ship_medium_armor_1:0.15, ship_medium_armor_2:0.15, ship_medium_armor_3:0.15, ship_medium_armor_4:0.15,
@@ -772,21 +794,18 @@ class App extends Component {
      ret = ret + "&de=" + document.getElementById("desi").selectedIndex
      ret = ret + "&do=" + document.getElementById("doct").selectedIndex
 
-     if(document.getElementById("bracket_shooting").checked == true){
-       ret = ret + "&bs=1"
-     }
-     if(document.getElementById("ladder_shooting").checked == true){
-       ret = ret + "&ls=1"
-     }
-     if(document.getElementById("shell_dyes").checked == true){
-       ret = ret + "&sd=1"
-     }
-
      if(document.getElementById("magnetic_detonator").checked == true){
        ret = ret + "&md=1"
      }
+     if(document.getElementById("torpex").checked == true){
+       ret = ret + "&to=1"
+     }
      if(document.getElementById("homing_torpedo").checked == true){
        ret = ret + "&ht=1"
+     }
+
+     if(document.getElementById("improved_submarine_mine_laying").checked == true){
+       ret = ret + "&isml=1"
      }
 
      if(document.getElementById("basic_light_shell").checked == true){
@@ -808,10 +827,6 @@ class App extends Component {
      }
      if(document.getElementById("improved_heavy_shell").checked == true){
        ret = ret + "&ihs=1"
-     }
-
-     if(document.getElementById("improved_submarine_mine_laying").checked == true){
-       ret = ret + "&isml=1"
      }
 
     document.querySelector("#inputcopy").value = ret
@@ -891,46 +906,21 @@ class App extends Component {
                           <label class="bold">Designer</label><br/>
                           <select id="desi">
                             <option value="No_Designer">No designer</option>
-                            <option value="Atlantic_fleet_Designer">Atlantic fleet designer</option>
-                            <option value="Battlefleet_Designer">Battlefleet designer</option>
-                            <option value="Coastal_defence_fleet_Designer">Coastal defence fleet designer</option>
-                            <option value="Convoy_escort_fleet_Designer">Convoy escort fleet designer</option>
-                            <option value="Mediterranean_fleet_Designer">Mediterranean fleet designer</option>
-                            <option value="Pacific_fleet_Designer">Pacific fleet designer</option>
-                            <option value="Raiding_fleet_Designer">Raiding fleet designer</option>
-                            <option value="Romanian_Black_Sea_dominance_Designer">Braila shipyards</option>
-                            <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
+                            <option value="atlantic_fleet_naval_manufacturer">Atlantic fleet designer</option>
+                            <option value="battlefleet_designer">Battlefleet designer</option>
+                            <option value="coastal_defence_naval_manufacturer">Coastal defence fleet designer</option>
+                            <option value="convoy_escort_naval_manufacturer">Convoy escort fleet designer</option>
+                            <option value="mediterranean_naval_manufacturer">Mediterranean fleet designer</option>
+                            <option value="pacific_fleet_naval_manufacturer">Pacific fleet designer</option>
+                            <option value="raiding_fleet_naval_manufacturer">Raiding fleet designer</option>
                           </select>
                         </p>
                         <p class="tech_names">
                           <label class="bold">Doctrine</label><br/>
                           <select id="doct">
                             <option value="No_Doctrine">No doctrine</option>
-                            <option value="Fleet_in_Being_Doctrine">Fleet in being</option>
-                            <option value="Trade_Interdiction_Doctrine">Trade interdiction</option>
-                            <option value="Base_Strike_Doctrine">Base strike</option>
+                            <option value="Yes_Doctrine">Yes doctrine</option>
                           </select>
-                        </p>
-                        <p class="tech_names">
-                          <label class="bold">Fire control methods</label><br/>
-                          <label class="container">
-                            Bracket shooting
-                            <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
-                            <span class="checkmark"></span>
-                          </label>
-                          <br/>
-                          <label class="container">
-                            Ladder shooting
-                            <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
-                            <span class="checkmark"></span>
-                          </label>
-                          <br/>
-                          <label class="container">
-                            Shell dyes
-                            <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
-                            <span class="checkmark"></span>
-                          </label>
-                          <br/>
                         </p>
                         <p class="tech_names">
                           <label class="bold">Torpedo</label><br/>
@@ -941,8 +931,23 @@ class App extends Component {
                           </label>
                           <br/>
                           <label class="container">
+                            Torpex
+                            <input type="checkbox" id="torpex" value="Torpedo_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
                             Homing torpedo
-                            <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
+                            <input type="checkbox" id="homing_torpedo" value="Torpedo_3"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                        </p>
+                        <p class="tech_names">
+                          <label class="bold">Mines</label><br/>
+                          <label class="container">
+                            Torpedo tube mine deployment
+                            <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
@@ -990,15 +995,6 @@ class App extends Component {
                           <label class="container">
                             Super heavy armor piercing shell
                             <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
-                            <span class="checkmark"></span>
-                          </label>
-                          <br/>
-                        </p>
-                        <p class="tech_names">
-                          <label class="bold">Mines</label><br/>
-                          <label class="container">
-                            Torpedo tube mine deployment
-                            <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
@@ -2359,26 +2355,23 @@ class App extends Component {
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][1]["props"]["children"][2]["props"]["children"][this.urlParams.get("do")]["props"]["selected"]=true
       }
 
-      //fcm & torp tech
+      //torp tech & mine techs
 
-      if(this.urlParams.get("bs")!=null){
+      if(this.urlParams.get("md")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
-      if(this.urlParams.get("ls")!=null){
+      if(this.urlParams.get("to")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
-      if(this.urlParams.get("sd")!=null){
+      if(this.urlParams.get("ht")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][6]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
 
-      if(this.urlParams.get("md")!=null){
+      if(this.urlParams.get("isml")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][3]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
-      if(this.urlParams.get("ht")!=null){
-        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][3]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
-      }
 
-      //shell & mine techs
+      //shell techs
 
       if(this.urlParams.get("bls")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][0]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
@@ -2401,9 +2394,6 @@ class App extends Component {
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][2]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
 
-      if(this.urlParams.get("isml")!=null){
-        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][3]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
-      }
     }
 
     console.log("b is")
