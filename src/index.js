@@ -242,7 +242,6 @@ class App extends Component {
       ship_heavy_armor_1:-0.1, ship_heavy_armor_2:-0.1, ship_heavy_armor_3:-0.1, ship_heavy_armor_4:-0.1,
       ship_anti_air_1:-0.01, ship_anti_air_2:-0.01, ship_anti_air_3:-0.01, ship_anti_air_4:-0.01,
       ship_unavailable_space:0.05,
-      top_heavy:-0.05,
       ship_torpedo:-0.02, ship_torpedo_610:-0.03,
       ship_torpedo_sub:-0.01,
       ship_mine_layer:-0.02,
@@ -267,8 +266,7 @@ class App extends Component {
       ship_unarmored_hangar:-0.1,
       atlantic_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
       battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
-    reliability : {damage_control_system_1:0.1, damage_control_system_2:0.2, damage_control_system_3:0.3,
-      top_heavy:-0.1},
+    reliability : {damage_control_system_1:0.1, damage_control_system_2:0.2, damage_control_system_3:0.3},
     manpower : {ship_anti_air_1:0.1, ship_anti_air_2:0.1, ship_anti_air_3:0.1, ship_anti_air_4:0.1},
     carrier_size : {ship_unarmored_hangar:0.2},
     lg_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
@@ -1250,8 +1248,10 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_torpedo">Torpedo Launcher</option>
-          <option class="grey" value="ship_torpedo_610">Torpedo Launcher (610)</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
         </select>
         <select class="equipselect" id="slot7">
           <option value="Locked">Locked</option>
@@ -1307,7 +1307,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -1500,7 +1499,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -1699,7 +1697,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -1840,7 +1837,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -2039,7 +2035,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -2206,7 +2201,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -2305,7 +2299,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
           <option class="grey" value="ship_sub_snorkel_1">Snorkel 1</option>
           <option class="grey" value="ship_sub_snorkel_2">Snorkel 2</option>
         </select>
@@ -2316,7 +2309,6 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option value="top_heavy">Top Heavy</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot13">
