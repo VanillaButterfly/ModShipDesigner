@@ -29,11 +29,11 @@ class App extends Component {
   //Base stats table per hull in hull index order. Refer to the above commentary for hull index, or to the return() function if said commentary is not up-to-date
   naval_speed = [ 0, 0, 0, 0, 0, 0, 0 ];
 
-  naval_range = [ 2000, 3000, 3000, 3000, 4000, 4000, 3000 ];
+  naval_range = [ 4000, 5000, 5000, 5000, 6000, 6000, 5000 ];
   
   max_organisation = [ 40, 40, 40, 40, 40, 40, 40 ];
   
-  max_strength = [ 30, 100, 100, 100, 300, 300, 20 ];
+  max_strength = [ 50, 100, 100, 100, 300, 300, 30 ];
   
   reliability = [ 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5 ];
   
@@ -65,7 +65,7 @@ class App extends Component {
   
   surface_detection = [ 15, 20, 20, 20, 20, 20, 10 ];
   
-  sub_visibility = [ 0, 0, 0, 0, 0, 0, 25 ];
+  sub_visibility = [ 0, 0, 0, 0, 0, 0, 20 ];
   
   sub_detection = [ 0, 0, 0, 0, 0, 0, 0 ];
   
@@ -73,7 +73,7 @@ class App extends Component {
   
   mines_sweeping = [ 0, 0, 0, 0, 0, 0, 0 ];
   
-  build_cost_ic = [ 500, 2000, 2000, 2000, 3000, 3000, 200 ];
+  build_cost_ic = [ 500, 2000, 2000, 2000, 3000, 3000, 300 ];
   
   steel = [ 2, 2, 2, 2, 2, 2, 1 ];
   
@@ -84,7 +84,7 @@ class App extends Component {
     naval_speed : {light_ship_deprecated_engine:20, light_ship_range_engine_1:25, light_ship_range_engine_2:30, light_ship_range_engine_3:35, light_ship_range_engine_4:40, light_ship_perf_engine_1:35, light_ship_perf_engine_2:40, light_ship_perf_engine_3:45, light_ship_perf_engine_4:50,
       medium_ship_deprecated_engine:20, medium_ship_range_engine_1:25, medium_ship_range_engine_2:30, medium_ship_range_engine_3:35, medium_ship_range_engine_4:40, medium_ship_perf_engine_1:35, medium_ship_perf_engine_2:40, medium_ship_perf_engine_3:45, medium_ship_perf_engine_4:50,
       heavy_ship_deprecated_engine:20, heavy_ship_range_engine_1:25, heavy_ship_range_engine_2:30, heavy_ship_range_engine_3:35, heavy_ship_range_engine_4:40, heavy_ship_perf_engine_1:35, heavy_ship_perf_engine_2:40, heavy_ship_perf_engine_3:45, heavy_ship_perf_engine_4:50,
-      sub_ship_engine_1:14, sub_ship_engine_2:15, sub_ship_engine_3:16, sub_ship_engine_4:17},
+      sub_ship_deprecated_engine:10, sub_ship_engine_1:14, sub_ship_engine_2:15, sub_ship_engine_3:16, sub_ship_engine_4:17},
     naval_range : {},
     max_organisation : {},
     max_strength : {ship_light_battery_1:2, ship_light_battery_2:2, ship_light_battery_3:2, ship_light_battery_4:2,
@@ -117,7 +117,7 @@ class App extends Component {
       light_ship_deprecated_engine:80, light_ship_range_engine_1:40, light_ship_range_engine_2:40, light_ship_range_engine_3:40, light_ship_range_engine_4:40, light_ship_perf_engine_1:60, light_ship_perf_engine_2:60, light_ship_perf_engine_3:60, light_ship_perf_engine_4:60,
       medium_ship_deprecated_engine:120, medium_ship_range_engine_1:60, medium_ship_range_engine_2:60, medium_ship_range_engine_3:60, medium_ship_range_engine_4:60, medium_ship_perf_engine_1:90, medium_ship_perf_engine_2:90, medium_ship_perf_engine_3:90, medium_ship_perf_engine_4:90,
       heavy_ship_deprecated_engine:160, heavy_ship_range_engine_1:80, heavy_ship_range_engine_2:80, heavy_ship_range_engine_3:80, heavy_ship_range_engine_4:80, heavy_ship_perf_engine_1:120, heavy_ship_perf_engine_2:120, heavy_ship_perf_engine_3:120, heavy_ship_perf_engine_4:120,
-      sub_ship_engine_1:10, sub_ship_engine_2:10, sub_ship_engine_3:10, sub_ship_engine_4:10,
+      sub_ship_deprecated_engine:10, sub_ship_engine_1:10, sub_ship_engine_2:10, sub_ship_engine_3:10, sub_ship_engine_4:10,
       ship_torpedo:10, ship_torpedo_610:10,
       ship_torpedo_sub:10,
       ship_mine_layer:20,
@@ -134,7 +134,7 @@ class App extends Component {
       ship_heavy_battery_1:12, ship_heavy_battery_2:14, ship_heavy_battery_3:16, ship_heavy_battery_4:18},
     hg_armor_piercing : {},
     torpedo_attack : {ship_torpedo:30, ship_torpedo_610:40,
-      ship_torpedo_sub:12},
+      ship_torpedo_sub:14},
     sub_attack : {ship_depth_charge_1:10, ship_depth_charge_2:15, ship_depth_charge_3:20, ship_depth_charge_4:25},
     armor_value : {ship_light_armor:3,
       ship_medium_armor_1:6, ship_medium_armor_2:8, ship_medium_armor_3:10, ship_medium_armor_4:12,
@@ -144,7 +144,7 @@ class App extends Component {
     fuel_consumption : {light_ship_deprecated_engine:5, light_ship_range_engine_1:4, light_ship_range_engine_2:5, light_ship_range_engine_3:6, light_ship_range_engine_4:7, light_ship_perf_engine_1:7, light_ship_perf_engine_2:8, light_ship_perf_engine_3:9, light_ship_perf_engine_4:10,
       medium_ship_deprecated_engine:26, medium_ship_range_engine_1:23, medium_ship_range_engine_2:26, medium_ship_range_engine_3:29, medium_ship_range_engine_4:32, medium_ship_perf_engine_1:32, medium_ship_perf_engine_2:35, medium_ship_perf_engine_3:38, medium_ship_perf_engine_4:41,
       heavy_ship_deprecated_engine:75, heavy_ship_range_engine_1:70, heavy_ship_range_engine_2:75, heavy_ship_range_engine_3:80, heavy_ship_range_engine_4:85, heavy_ship_perf_engine_1:85, heavy_ship_perf_engine_2:90, heavy_ship_perf_engine_3:95, heavy_ship_perf_engine_4:100,
-      sub_ship_engine_1:2, sub_ship_engine_2:3, sub_ship_engine_3:4, sub_ship_engine_4:5},
+      sub_ship_deprecated_engine:3, sub_ship_engine_1:2, sub_ship_engine_2:3, sub_ship_engine_3:4, sub_ship_engine_4:5},
     surface_visibility : {ship_light_battery_1:0.5, ship_light_battery_2:0.5, ship_light_battery_3:0.5, ship_light_battery_4:0.5,
       ship_light_medium_battery_1:1, ship_light_medium_battery_2:1, ship_light_medium_battery_3:1, ship_light_medium_battery_4:1,
       ship_heavy_medium_battery_1:1, ship_heavy_medium_battery_2:1, ship_heavy_medium_battery_3:1, ship_heavy_medium_battery_4:1,
@@ -155,9 +155,9 @@ class App extends Component {
       ship_extra_fuel_tank:1},
     surface_detection : {ship_surveillance_radar_1:5, ship_surveillance_radar_2:7, ship_surveillance_radar_3:12, ship_surveillance_radar_4:18,
       ship_airplane_launcher:7},
-    sub_visibility : {ship_torpedo_sub:1,
-      ship_mine_layer_sub:1,
-      ship_extra_fuel_tank_sub:2},
+    sub_visibility : {ship_torpedo_sub:2,
+      ship_mine_layer_sub:2,
+      ship_extra_fuel_tank_sub:4},
     sub_detection : {ship_airplane_launcher:3,
       ship_sonar_1:6, ship_sonar_2:12, ship_sonar_3:18, ship_sonar_4:24},
     mines_planting : {ship_mine_layer:1,
@@ -171,7 +171,7 @@ class App extends Component {
       light_ship_deprecated_engine:180, light_ship_range_engine_1:240, light_ship_range_engine_2:270, light_ship_range_engine_3:300, light_ship_range_engine_4:330, light_ship_perf_engine_1:210, light_ship_perf_engine_2:240, light_ship_perf_engine_3:270, light_ship_perf_engine_4:300,
       medium_ship_deprecated_engine:600, medium_ship_range_engine_1:1000, medium_ship_range_engine_2:1300, medium_ship_range_engine_3:1700, medium_ship_range_engine_4:2100, medium_ship_perf_engine_1:800, medium_ship_perf_engine_2:1000, medium_ship_perf_engine_3:1300, medium_ship_perf_engine_4:1700,
       heavy_ship_deprecated_engine:1700, heavy_ship_range_engine_1:2300, heavy_ship_range_engine_2:2700, heavy_ship_range_engine_3:3200, heavy_ship_range_engine_4:3700, heavy_ship_perf_engine_1:2000, heavy_ship_perf_engine_2:2300, heavy_ship_perf_engine_3:2700, heavy_ship_perf_engine_4:3200,
-      sub_ship_engine_1:70, sub_ship_engine_2:80, sub_ship_engine_3:90, sub_ship_engine_4:100,
+      sub_ship_deprecated_engine:60, sub_ship_engine_1:70, sub_ship_engine_2:80, sub_ship_engine_3:90, sub_ship_engine_4:100,
       ship_torpedo:100, ship_torpedo_610:150,
       ship_torpedo_sub:100,
       ship_mine_layer:90,
@@ -251,22 +251,22 @@ class App extends Component {
       ship_small_deck_space:-0.05,
       ship_deck_space:-0.15,
       mediterranean_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
-    naval_range : {ship_unavailable_space:-0.05,
-      light_ship_range_engine_1:0.025, light_ship_range_engine_2:0.05, light_ship_range_engine_3:0.075, light_ship_range_engine_4:0.1, light_ship_perf_engine_2:-0.05, light_ship_perf_engine_3:-0.1, light_ship_perf_engine_4:-0.15,
-      medium_ship_range_engine_1:0.025, medium_ship_range_engine_2:0.05, medium_ship_range_engine_3:0.075, medium_ship_range_engine_4:0.1, medium_ship_perf_engine_2:-0.05, medium_ship_perf_engine_3:-0.1, medium_ship_perf_engine_4:-0.15,
-      heavy_ship_range_engine_1:0.025, heavy_ship_range_engine_2:0.05, heavy_ship_range_engine_3:0.075, heavy_ship_range_engine_4:0.1, heavy_ship_perf_engine_2:-0.05, heavy_ship_perf_engine_3:-0.1, heavy_ship_perf_engine_4:-0.15,
-      sub_ship_engine_2:-0.05, sub_ship_engine_3:-0.1, sub_ship_engine_4:-0.15,
+    naval_range : {ship_unavailable_space:-0.1,
+      light_ship_deprecated_engine:-0.1, light_ship_range_engine_1:0.025, light_ship_range_engine_2:0.05, light_ship_range_engine_3:0.075, light_ship_range_engine_4:0.1, light_ship_perf_engine_2:-0.05, light_ship_perf_engine_3:-0.1, light_ship_perf_engine_4:-0.15,
+      medium_ship_deprecated_engine:-0.1, medium_ship_range_engine_1:0.025, medium_ship_range_engine_2:0.05, medium_ship_range_engine_3:0.075, medium_ship_range_engine_4:0.1, medium_ship_perf_engine_2:-0.05, medium_ship_perf_engine_3:-0.1, medium_ship_perf_engine_4:-0.15,
+      heavy_ship_deprecated_engine:-0.1, heavy_ship_range_engine_1:0.025, heavy_ship_range_engine_2:0.05, heavy_ship_range_engine_3:0.075, heavy_ship_range_engine_4:0.1, heavy_ship_perf_engine_2:-0.05, heavy_ship_perf_engine_3:-0.1, heavy_ship_perf_engine_4:-0.15,
+      sub_ship_deprecated_engine:-0.1, sub_ship_engine_2:0.05, sub_ship_engine_3:0.1, sub_ship_engine_4:0.15,
       ship_extra_fuel_tank:0.2,
       ship_extra_fuel_tank_sub:0.2,
       pacific_fleet_naval_manufacturer:{CV:0.2, BB:0.2, CVL:0.2, CA:0.2, CL:0.2, DD:0.2, SS:0.2},
       coastal_defence_naval_manufacturer:{CV:-0.2, BB:-0.2, CVL:-0.2, CA:-0.2, CL:-0.2, DD:-0.2, SS:-0.2}},
     max_organisation : {},
-    max_strength : {ship_unavailable_space:-0.05,
+    max_strength : {ship_unavailable_space:-0.1,
       reinforced_structure:0.2,
       ship_unarmored_hangar:-0.1,
       atlantic_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
       battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
-    reliability : {damage_control_system_1:0.1, damage_control_system_2:0.2, damage_control_system_3:0.3},
+    reliability : {damage_control_system_1:0.2, damage_control_system_2:0.4, damage_control_system_3:0.6},
     manpower : {ship_anti_air_1:0.1, ship_anti_air_2:0.1, ship_anti_air_3:0.1, ship_anti_air_4:0.1},
     carrier_size : {ship_unarmored_hangar:0.2},
     lg_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
@@ -301,8 +301,9 @@ class App extends Component {
       ship_sub_snorkel_1:0.1, ship_sub_snorkel_2:0.1,
       convoy_escort_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
     surface_detection : {raiding_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
-    sub_visibility : {sub_ship_engine_2:-0.2, sub_ship_engine_3:-0.4, sub_ship_engine_4:-0.6,
-      ship_sub_snorkel_1:-0.05, ship_sub_snorkel_2:-0.1,
+    sub_visibility : {ship_unavailable_space:-0.05,
+      sub_ship_deprecated_engine:0.1, sub_ship_engine_2:-0.1, sub_ship_engine_3:-0.2, sub_ship_engine_4:-0.3,
+      ship_sub_snorkel_1:-0.1, ship_sub_snorkel_2:-0.2,
       raiding_fleet_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
     sub_detection : {convoy_escort_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     mines_planting : {Mines_1:{SS:0.5}},
@@ -2287,6 +2288,7 @@ class App extends Component {
           <option class="grey" value="ship_surveillance_radar_4">Surveillance Radar 4</option>
         </select>
         <select class="equipselect" id="slot10">
+          <option value="sub_ship_deprecated_engine">Submarine Deprecated Engine</option>
           <option value="sub_ship_engine_1">Submarine Engine 1</option>
           <option value="sub_ship_engine_2">Submarine Engine 2</option>
           <option value="sub_ship_engine_3">Submarine Engine 3</option>
