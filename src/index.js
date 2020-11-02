@@ -84,7 +84,7 @@ class App extends Component {
     naval_speed : {light_ship_deprecated_engine:20, light_ship_range_engine_1:25, light_ship_range_engine_2:30, light_ship_range_engine_3:35, light_ship_range_engine_4:40, light_ship_perf_engine_1:35, light_ship_perf_engine_2:40, light_ship_perf_engine_3:45, light_ship_perf_engine_4:50,
       medium_ship_deprecated_engine:20, medium_ship_range_engine_1:25, medium_ship_range_engine_2:30, medium_ship_range_engine_3:35, medium_ship_range_engine_4:40, medium_ship_perf_engine_1:35, medium_ship_perf_engine_2:40, medium_ship_perf_engine_3:45, medium_ship_perf_engine_4:50,
       heavy_ship_deprecated_engine:20, heavy_ship_range_engine_1:25, heavy_ship_range_engine_2:30, heavy_ship_range_engine_3:35, heavy_ship_range_engine_4:40, heavy_ship_perf_engine_1:35, heavy_ship_perf_engine_2:40, heavy_ship_perf_engine_3:45, heavy_ship_perf_engine_4:50,
-      sub_ship_deprecated_engine:10, sub_ship_engine_1:14, sub_ship_engine_2:15, sub_ship_engine_3:16, sub_ship_engine_4:17},
+      sub_ship_deprecated_engine:10, sub_ship_engine_1:15, sub_ship_engine_2:16, sub_ship_engine_3:17, sub_ship_engine_4:18},
     naval_range : {},
     max_organisation : {},
     max_strength : {ship_light_battery_1:2, ship_light_battery_2:2, ship_light_battery_3:2, ship_light_battery_4:2,
@@ -151,13 +151,11 @@ class App extends Component {
       ship_heavy_battery_1:2, ship_heavy_battery_2:2, ship_heavy_battery_3:2, ship_heavy_battery_4:2,
       ship_torpedo:0.5, ship_torpedo_610:0.5,
       ship_airplane_launcher:0.5,
-      ship_small_deck_space:1, ship_deck_space:3,
-      ship_extra_fuel_tank:1},
+      ship_small_deck_space:1, ship_deck_space:3},
     surface_detection : {ship_surveillance_radar_1:5, ship_surveillance_radar_2:7, ship_surveillance_radar_3:12, ship_surveillance_radar_4:18,
       ship_airplane_launcher:7},
     sub_visibility : {ship_torpedo_sub:2,
-      ship_mine_layer_sub:2,
-      ship_extra_fuel_tank_sub:4},
+      ship_mine_layer_sub:2},
     sub_detection : {ship_airplane_launcher:3,
       ship_sonar_1:6, ship_sonar_2:12, ship_sonar_3:18, ship_sonar_4:24},
     mines_planting : {ship_mine_layer:1,
@@ -241,7 +239,7 @@ class App extends Component {
       ship_medium_armor_1:-0.05, ship_medium_armor_1:-0.05, ship_medium_armor_1:-0.05, ship_medium_armor_1:-0.05,
       ship_heavy_armor_1:-0.1, ship_heavy_armor_2:-0.1, ship_heavy_armor_3:-0.1, ship_heavy_armor_4:-0.1,
       ship_anti_air_1:-0.01, ship_anti_air_2:-0.01, ship_anti_air_3:-0.01, ship_anti_air_4:-0.01,
-      ship_unavailable_space:0.05,
+      ship_unavailable_space:0.02,
       ship_torpedo:-0.02, ship_torpedo_610:-0.03,
       ship_torpedo_sub:-0.01,
       ship_mine_layer:-0.02,
@@ -257,7 +255,6 @@ class App extends Component {
       heavy_ship_deprecated_engine:-0.1, heavy_ship_range_engine_1:0.025, heavy_ship_range_engine_2:0.05, heavy_ship_range_engine_3:0.075, heavy_ship_range_engine_4:0.1, heavy_ship_perf_engine_2:-0.05, heavy_ship_perf_engine_3:-0.1, heavy_ship_perf_engine_4:-0.15,
       sub_ship_deprecated_engine:-0.1, sub_ship_engine_2:0.05, sub_ship_engine_3:0.1, sub_ship_engine_4:0.15,
       ship_extra_fuel_tank:0.2,
-      ship_extra_fuel_tank_sub:0.2,
       pacific_fleet_naval_manufacturer:{CV:0.2, BB:0.2, CVL:0.2, CA:0.2, CL:0.2, DD:0.2, SS:0.2},
       coastal_defence_naval_manufacturer:{CV:-0.2, BB:-0.2, CVL:-0.2, CA:-0.2, CL:-0.2, DD:-0.2, SS:-0.2}},
     max_organisation : {},
@@ -299,11 +296,13 @@ class App extends Component {
     fuel_consumption : {},
     surface_visibility : {ship_unavailable_space:-0.05,
       ship_sub_snorkel_1:0.1, ship_sub_snorkel_2:0.1,
+      ship_extra_fuel_tank:0.1,
       convoy_escort_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
     surface_detection : {raiding_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     sub_visibility : {ship_unavailable_space:-0.05,
       sub_ship_deprecated_engine:0.1, sub_ship_engine_2:-0.1, sub_ship_engine_3:-0.2, sub_ship_engine_4:-0.3,
       ship_sub_snorkel_1:-0.1, ship_sub_snorkel_2:-0.2,
+      ship_extra_fuel_tank:0.1,
       raiding_fleet_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
     sub_detection : {convoy_escort_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     mines_planting : {Mines_1:{SS:0.5}},
@@ -315,8 +314,7 @@ class App extends Component {
       ship_unavailable_space:-0.1,
       damage_control_system_1:0.05, damage_control_system_2:0.1, damage_control_system_3:0.15,
       reinforced_structure:0.1,
-      ship_extra_fuel_tank:0.1,
-      ship_extra_fuel_tank_sub:0.1},
+      ship_extra_fuel_tank:0.1},
     steel : {},
     chromium : {}
   }
@@ -2296,7 +2294,7 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot11">
           <option value="Empty">Empty</option>
-          <option class="grey" value="ship_extra_fuel_tank_sub">Fuel Tank</option>
+          <option class="grey" value="ship_extra_fuel_tank">Fuel Tank</option>
           <option value="damage_control_system_1">Damage Control 1</option>
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
@@ -2306,7 +2304,7 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot12">
           <option value="Empty">Empty</option>
-          <option class="grey" value="ship_extra_fuel_tank_sub">Fuel Tank</option>
+          <option class="grey" value="ship_extra_fuel_tank">Fuel Tank</option>
           <option value="damage_control_system_1">Damage Control 1</option>
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
