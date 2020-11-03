@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ModShipDesigner/static/css/main.5b47a038.chunk.css",
-    "main.js": "/ModShipDesigner/static/js/main.c3caf625.chunk.js",
-    "main.js.map": "/ModShipDesigner/static/js/main.c3caf625.chunk.js.map",
+    "main.js": "/ModShipDesigner/static/js/main.3b824251.chunk.js",
+    "main.js.map": "/ModShipDesigner/static/js/main.3b824251.chunk.js.map",
     "runtime-main.js": "/ModShipDesigner/static/js/runtime-main.5b5a5a7a.js",
     "runtime-main.js.map": "/ModShipDesigner/static/js/runtime-main.5b5a5a7a.js.map",
     "static/js/2.d5eebf8e.chunk.js": "/ModShipDesigner/static/js/2.d5eebf8e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.5b5a5a7a.js",
     "static/js/2.d5eebf8e.chunk.js",
     "static/css/main.5b47a038.chunk.css",
-    "static/js/main.c3caf625.chunk.js"
+    "static/js/main.3b824251.chunk.js"
   ]
 }
