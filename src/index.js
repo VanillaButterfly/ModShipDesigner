@@ -1309,11 +1309,7 @@ class App extends Component {
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_extra_fuel_tank">Fuel Tank</option>
-          <option value="damage_control_system_1">Damage Control 1</option>
-          <option value="damage_control_system_2">Damage Control 2</option>
-          <option value="damage_control_system_3">Damage Control 3</option>
-          <option value="reinforced_structure">Reinforced Structure</option>
-          <option class="grey" value="ship_light_armor">Light Armor</option>
+          <option value="ship_light_armor">Light Armor</option>
         </select>
         <select class="equipselect" id="slot14">
           <option value="Locked">Locked</option>
