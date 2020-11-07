@@ -75,7 +75,7 @@ class App extends Component {
   
   build_cost_ic = [ 600, 1500, 1500, 1500, 3000, 3000, 300 ];
   
-  steel = [ 3, 3, 3, 3, 2, 2, 1 ];
+  steel = [ 2, 2, 2, 2, 3, 3, 2 ];
   
   chromium = [ 0, 0, 0, 0, 0, 0, 0 ];
 
@@ -97,7 +97,7 @@ class App extends Component {
       sub_ship_engine_2:5, sub_ship_engine_3:10, sub_ship_engine_4:15,
       ship_torpedo:2, ship_torpedo_610:2,
       ship_airplane_launcher:2,
-      ship_small_deck_space:10, ship_deck_space:30},
+      ship_small_deck_space:10, ship_deck_space:20},
     reliability : {},
     supply_consumption : {ship_light_battery_1:0.01, ship_light_battery_2:0.01, ship_light_battery_3:0.01, ship_light_battery_4:0.01,
       ship_light_medium_battery_1:0.03, ship_light_medium_battery_2:0.03, ship_light_medium_battery_3:0.03, ship_light_medium_battery4:0.03,
@@ -108,15 +108,15 @@ class App extends Component {
       ship_mine_layer:0.01,
       ship_mine_layer_sub:0.01,
       ship_depth_charge_1:0.01, ship_depth_charge_2:0.01, ship_depth_charge_3:0.01, ship_depth_charge_4:0.01,
-      ship_small_deck_space:0.05, ship_deck_space:0.15},
+      ship_small_deck_space:0.05, ship_deck_space:0.1},
     manpower : {ship_light_battery_1:40, ship_light_battery_2:40, ship_light_battery_3:40, ship_light_battery_4:40,
       ship_light_medium_battery_1:100, ship_light_medium_battery_2:100, ship_light_medium_battery_3:100, ship_light_medium_battery4:100,
       ship_heavy_medium_battery_1:100, ship_heavy_medium_battery_2:100, ship_heavy_medium_battery_3:100, ship_heavy_medium_battery_4:100,
       ship_heavy_battery_1:160, ship_heavy_battery_2:160, ship_heavy_battery_3:160, ship_heavy_battery_4:160,
       ship_anti_air_1:10, ship_anti_air_2:10, ship_anti_air_3:10, ship_anti_air_4:10,
-      light_ship_deprecated_engine:80, light_ship_range_engine_1:40, light_ship_range_engine_2:40, light_ship_range_engine_3:40, light_ship_range_engine_4:40, light_ship_perf_engine_1:60, light_ship_perf_engine_2:60, light_ship_perf_engine_3:60, light_ship_perf_engine_4:60,
-      medium_ship_deprecated_engine:120, medium_ship_range_engine_1:60, medium_ship_range_engine_2:60, medium_ship_range_engine_3:60, medium_ship_range_engine_4:60, medium_ship_perf_engine_1:90, medium_ship_perf_engine_2:90, medium_ship_perf_engine_3:90, medium_ship_perf_engine_4:90,
-      heavy_ship_deprecated_engine:160, heavy_ship_range_engine_1:80, heavy_ship_range_engine_2:80, heavy_ship_range_engine_3:80, heavy_ship_range_engine_4:80, heavy_ship_perf_engine_1:120, heavy_ship_perf_engine_2:120, heavy_ship_perf_engine_3:120, heavy_ship_perf_engine_4:120,
+      light_ship_deprecated_engine:60, light_ship_range_engine_1:40, light_ship_range_engine_2:40, light_ship_range_engine_3:40, light_ship_range_engine_4:40, light_ship_perf_engine_1:60, light_ship_perf_engine_2:60, light_ship_perf_engine_3:60, light_ship_perf_engine_4:60,
+      medium_ship_deprecated_engine:90, medium_ship_range_engine_1:60, medium_ship_range_engine_2:60, medium_ship_range_engine_3:60, medium_ship_range_engine_4:60, medium_ship_perf_engine_1:90, medium_ship_perf_engine_2:90, medium_ship_perf_engine_3:90, medium_ship_perf_engine_4:90,
+      heavy_ship_deprecated_engine:120, heavy_ship_range_engine_1:80, heavy_ship_range_engine_2:80, heavy_ship_range_engine_3:80, heavy_ship_range_engine_4:80, heavy_ship_perf_engine_1:120, heavy_ship_perf_engine_2:120, heavy_ship_perf_engine_3:120, heavy_ship_perf_engine_4:120,
       sub_ship_deprecated_engine:10, sub_ship_engine_1:10, sub_ship_engine_2:10, sub_ship_engine_3:10, sub_ship_engine_4:10,
       ship_torpedo:10, ship_torpedo_610:10,
       ship_torpedo_sub:10,
@@ -125,8 +125,8 @@ class App extends Component {
       ship_mine_sweeper:10,
       ship_depth_charge_1:10, ship_depth_charge_2:10, ship_depth_charge_3:10, ship_depth_charge_4:10,
       ship_airplane_launcher:10,
-      ship_small_deck_space:50, ship_deck_space:150},
-    carrier_size : {ship_small_deck_space:10, ship_deck_space:30},
+      ship_small_deck_space:50, ship_deck_space:100},
+    carrier_size : {ship_small_deck_space:10, ship_deck_space:20},
     lg_attack : {ship_light_battery_1:2, ship_light_battery_2:3, ship_light_battery_3:3, ship_light_battery_4:4, 
       ship_light_medium_battery_1:6, ship_light_medium_battery_2:7, ship_light_medium_battery_3:8, ship_light_medium_battery_4:9},
     lg_armor_piercing : {},
@@ -151,7 +151,7 @@ class App extends Component {
       ship_heavy_battery_1:2, ship_heavy_battery_2:2, ship_heavy_battery_3:2, ship_heavy_battery_4:2,
       ship_torpedo:0.5, ship_torpedo_610:0.5,
       ship_airplane_launcher:0.5,
-      ship_small_deck_space:1, ship_deck_space:3},
+      ship_small_deck_space:1, ship_deck_space:2},
     surface_detection : {ship_surveillance_radar_1:6, ship_surveillance_radar_2:12, ship_surveillance_radar_3:18, ship_surveillance_radar_4:24,
       ship_airplane_launcher:6},
     sub_visibility : {ship_torpedo_sub:2,
@@ -178,21 +178,18 @@ class App extends Component {
       ship_depth_charge_1:50, ship_depth_charge_2:110, ship_depth_charge_3:180, ship_depth_charge_4:260,
       ship_sub_snorkel_1:50, ship_sub_snorkel_2:110,
       ship_airplane_launcher:150,
-      ship_small_deck_space:900, ship_small_deck_space:3000,
+      ship_small_deck_space:900, ship_deck_space:2000,
       ship_sonar_1:20, ship_sonar_2:50, ship_sonar_3:105, ship_sonar_4:150,
       ship_fire_control_system_1:40, ship_fire_control_system_2:100, ship_fire_control_system_3:210, ship_fire_control_system_4:300,
       ship_surveillance_radar_1:40, ship_surveillance_radar_2:100, ship_surveillance_radar_3:210, ship_surveillance_radar_4:300,
       ship_fire_control_radar_1:150, ship_fire_control_radar_2:400},
-    steel : {ship_heavy_battery_1:1, ship_heavy_battery_2:1, ship_heavy_battery_3:1, ship_heavy_battery_4:1,
-      ship_light_armor:1,
-      ship_medium_armor_1:1, ship_medium_armor_2:1, ship_medium_armor_3:1, ship_medium_armor_4:1,
-      ship_heavy_armor_1:2, ship_heavy_armor_2:2, ship_heavy_armor_3:2, ship_heavy_armor_4:2,
+    steel : {ship_light_medium_battery_1:1, ship_light_medium_battery_2:1, ship_light_medium_battery_3:1, ship_light_medium_battery_4:1,
+      ship_heavy_medium_battery_1:1, ship_heavy_medium_battery_2:1, ship_heavy_medium_battery_3:1, ship_heavy_medium_battery_4:1,
+      ship_heavy_battery_1:1, ship_heavy_battery_2:1, ship_heavy_battery_3:1, ship_heavy_battery_4:1,
+      reinforced_structure:1,
       ship_small_deck_space:1, ship_deck_space:1},
-    chromium : {ship_light_medium_battery_4:1,
-      ship_heavy_medium_battery_4:1,
-      ship_heavy_battery_4:1,
-      ship_medium_armor_3:1, ship_medium_armor_4:1,
-      ship_heavy_armor_3:1, ship_heavy_armor_4:1}
+    chromium : {ship_medium_armor_1:1, ship_medium_armor_2:1, ship_medium_armor_3:1, ship_medium_armor_4:1,
+      ship_heavy_armor_1:1, ship_heavy_armor_2:1, ship_heavy_armor_3:1, ship_heavy_armor_4:1}
   }
 
   //Stat Average per equipment piece
@@ -235,7 +232,7 @@ class App extends Component {
       ship_heavy_battery_1:-0.05, ship_heavy_battery_2:-0.08, ship_heavy_battery_3:-0.09, ship_heavy_battery_4:-0.10,
       ship_light_armor:-0.02,
       ship_medium_armor_1:-0.04, ship_medium_armor_2:-0.05, ship_medium_armor_3:-0.06, ship_medium_armor_4:-0.07,
-      ship_heavy_armor_1:-0.1, ship_heavy_armor_2:-0.1, ship_heavy_armor_3:-0.1, ship_heavy_armor_4:-0.1,
+      ship_heavy_armor_1:-0.8, ship_heavy_armor_2:-0.1, ship_heavy_armor_3:-0.12, ship_heavy_armor_4:-0.14,
       ship_anti_air_1:-0.005, ship_anti_air_2:-0.01, ship_anti_air_3:-0.015, ship_anti_air_4:-0.02,
       ship_torpedo:-0.02, ship_torpedo_610:-0.03,
       ship_torpedo_sub:-0.02,
@@ -243,8 +240,8 @@ class App extends Component {
       ship_mine_layer_sub:-0.02,
       ship_depth_charge_1:-0.01, ship_depth_charge_2:-0.01, ship_depth_charge_3:-0.01, ship_depth_charge_4:-0.01,
       ship_airplane_launcher:-0.01,
-      ship_small_deck_space:-0.05,
-      ship_deck_space:-0.15,
+      ship_small_deck_space:-0.06,
+      ship_deck_space:-0.12,
       mediterranean_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     naval_range : {ship_unavailable_space:-0.1,
       light_ship_deprecated_engine:-0.1, light_ship_range_engine_1:0.05, light_ship_range_engine_2:0.1, light_ship_range_engine_3:0.15, light_ship_range_engine_4:0.2, light_ship_perf_engine_2:-0.05, light_ship_perf_engine_3:-0.1, light_ship_perf_engine_4:-0.15,
@@ -307,7 +304,7 @@ class App extends Component {
     mines_sweeping : {},
     build_cost_ic : {ship_light_armor:0.1,
       ship_medium_armor_1:0.15, ship_medium_armor_2:0.15, ship_medium_armor_3:0.15, ship_medium_armor_4:0.15,
-      ship_heavy_armor_1:0.15, ship_heavy_armor_2:0.15, ship_heavy_armor_3:0.15, ship_heavy_armor_4:0.15	,
+      ship_heavy_armor_1:0.3, ship_heavy_armor_2:0.3, ship_heavy_armor_3:0.3, ship_heavy_armor_4:0.3,
       ship_anti_air_1:0.01, ship_anti_air_2:0.02, ship_anti_air_3:0.03, ship_anti_air_4:0.04,
       ship_unavailable_space:-0.1,
       damage_control_system_1:0.05, damage_control_system_2:0.1, damage_control_system_3:0.15,
@@ -1732,6 +1729,7 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_small_deck_space">Small Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -1744,6 +1742,7 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_small_deck_space">Small Hangar Space</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -1752,7 +1751,11 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_small_deck_space">Small Hangar Space</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -1761,7 +1764,11 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_small_deck_space">Small Hangar Space</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -1770,25 +1777,17 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_small_deck_space">Small Hangar Space</option>
         </select>
         <select class="equipselect" id="slot6">
-          <option value="Empty">Empty</option>
-          <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_anti_air_1">Anti-Air 1</option>
-          <option value="ship_anti_air_2">Anti-Air 2</option>
-          <option value="ship_anti_air_3">Anti-Air 3</option>
-          <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option value="Locked">Locked</option>
         </select>
         <select class="equipselect" id="slot7">
-          <option value="Empty">Empty</option>
-          <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_anti_air_1">Anti-Air 1</option>
-          <option value="ship_anti_air_2">Anti-Air 2</option>
-          <option value="ship_anti_air_3">Anti-Air 3</option>
-          <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option value="Locked">Locked</option>
         </select>
 
         <div id="picdiv">
@@ -2080,6 +2079,8 @@ class App extends Component {
           <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
+          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -2096,6 +2097,8 @@ class App extends Component {
           <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
+          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -2112,6 +2115,8 @@ class App extends Component {
           <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
+          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
+          <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -2120,6 +2125,14 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_light_medium_battery_1">Light Cruiser Battery 1</option>
+          <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
+          <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
+          <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
           <option value="ship_deck_space">Hangar Space</option>
         </select>
@@ -2130,6 +2143,14 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_light_medium_battery_1">Light Cruiser Battery 1</option>
+          <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
+          <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
+          <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
           <option value="ship_deck_space">Hangar Space</option>
         </select>
@@ -2140,18 +2161,19 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_light_medium_battery_1">Light Cruiser Battery 1</option>
+          <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
+          <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
+          <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
           <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot7">
-          <option value="Empty">Empty</option>
-          <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_anti_air_1">Anti-Air 1</option>
-          <option value="ship_anti_air_2">Anti-Air 2</option>
-          <option value="ship_anti_air_3">Anti-Air 3</option>
-          <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_small_deck_space">Small Hangar Space</option>
-          <option value="ship_deck_space">Hangar Space</option>
+          <option value="Locked">Locked</option>
         </select>
 
         <div id="picdiv">
