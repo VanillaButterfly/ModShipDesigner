@@ -29,7 +29,7 @@ class App extends Component {
   //Base stats table per hull in hull index order. Refer to the above commentary for hull index, or to the return() function if said commentary is not up-to-date
   naval_speed = [ 0, 0, 0, 0, 0, 0, 0 ];
 
-  naval_range = [ 2500, 3500, 3500, 3500, 5000, 5000, 5000 ];
+  naval_range = [ 2500, 3500, 3500, 3500, 4000, 4000, 4000 ];
   
   max_organisation = [ 40, 40, 40, 40, 40, 40, 40 ];
   
@@ -75,7 +75,7 @@ class App extends Component {
   
   build_cost_ic = [ 600, 2000, 2000, 2000, 3000, 3000, 300 ];
   
-  steel = [ 2, 2, 2, 2, 3, 3, 2 ];
+  steel = [ 2, 2, 2, 2, 4, 4, 2 ];
   
   chromium = [ 0, 0, 0, 0, 0, 0, 0 ];
 
@@ -151,7 +151,7 @@ class App extends Component {
       ship_heavy_battery_1:2, ship_heavy_battery_2:2, ship_heavy_battery_3:2, ship_heavy_battery_4:2,
       ship_torpedo:0.5, ship_torpedo_610:0.5,
       ship_airplane_launcher:0.5,
-      ship_deck_space:1, ship_large_deck_space:3},
+      ship_deck_space:1, ship_large_deck_space:2},
     surface_detection : {ship_surveillance_radar_1:6, ship_surveillance_radar_2:12, ship_surveillance_radar_3:18, ship_surveillance_radar_4:24,
       ship_airplane_launcher:6},
     sub_visibility : {ship_torpedo_sub:2,
@@ -178,7 +178,7 @@ class App extends Component {
       ship_depth_charge_1:50, ship_depth_charge_2:110, ship_depth_charge_3:180, ship_depth_charge_4:260,
       ship_sub_snorkel_1:50, ship_sub_snorkel_2:110,
       ship_airplane_launcher:150,
-      ship_deck_space:900, ship_large_deck_space:3000,
+      ship_deck_space:250, ship_large_deck_space:900,
       ship_sonar_1:20, ship_sonar_2:50, ship_sonar_3:105, ship_sonar_4:150,
       ship_fire_control_system_1:40, ship_fire_control_system_2:100, ship_fire_control_system_3:210, ship_fire_control_system_4:300,
       ship_surveillance_radar_1:40, ship_surveillance_radar_2:100, ship_surveillance_radar_3:210, ship_surveillance_radar_4:300,
@@ -240,7 +240,7 @@ class App extends Component {
       ship_mine_layer_sub:-0.02,
       ship_depth_charge_1:-0.01, ship_depth_charge_2:-0.01, ship_depth_charge_3:-0.01, ship_depth_charge_4:-0.01,
       ship_airplane_launcher:-0.01,
-      ship_deck_space:-0.06, ship_large_deck_space:-0.18,
+      ship_deck_space:-0.05, ship_large_deck_space:-0.07,
       mediterranean_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
     naval_range : {ship_unavailable_space:-0.1,
       light_ship_deprecated_engine:-0.1, light_ship_range_engine_1:0.05, light_ship_range_engine_2:0.1, light_ship_range_engine_3:0.15, light_ship_range_engine_4:0.2, light_ship_perf_engine_2:-0.05, light_ship_perf_engine_3:-0.1, light_ship_perf_engine_4:-0.15,
@@ -253,7 +253,7 @@ class App extends Component {
     max_organisation : {},
     max_strength : {ship_unavailable_space:-0.1,
       reinforced_structure:0.2,
-      ship_unarmored_hangar:-0.05,
+      ship_unarmored_hangar:-0.2,
       ship_extra_fuel_tank:0.05,
       atlantic_fleet_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
       battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1}},
@@ -308,6 +308,7 @@ class App extends Component {
       ship_unavailable_space:-0.1,
       damage_control_system_1:0.05, damage_control_system_2:0.1, damage_control_system_3:0.15,
       reinforced_structure:0.1,
+      ship_unarmored_hangar:0.1,
       ship_extra_fuel_tank:0.2},
     steel : {},
     chromium : {}
