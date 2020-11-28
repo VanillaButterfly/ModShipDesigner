@@ -1376,6 +1376,7 @@ class App extends Component {
           <option value="ship_torpedo">Torpedo Launcher</option>
           <option value="ship_torpedo_610">Torpedo Launcher (610)</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
+          <option value="ship_mine_layer">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -1578,6 +1579,7 @@ class App extends Component {
           <option value="ship_torpedo">Torpedo Launcher</option>
           <option value="ship_torpedo_610">Torpedo Launcher (610)</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
+          <option value="ship_mine_layer">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
