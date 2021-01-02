@@ -108,6 +108,7 @@ class App extends Component {
       ship_mine_layer:0.01,
       ship_mine_layer_sub:0.01,
       ship_depth_charge_1:0.01, ship_depth_charge_2:0.01, ship_depth_charge_3:0.01, ship_depth_charge_4:0.01,
+      ship_airplane_launcher:0.01,
       ship_deck_space:0.05, ship_large_deck_space:0.15},
     manpower : {ship_light_battery_1:40, ship_light_battery_2:40, ship_light_battery_3:40, ship_light_battery_4:40,
       ship_light_medium_battery_1:100, ship_light_medium_battery_2:100, ship_light_medium_battery_3:100, ship_light_medium_battery4:100,
@@ -868,11 +869,11 @@ class App extends Component {
           <select onChange={() => this.swapper()} id="hullselect">
             <option value="0">DD Hull</option>
             <option class="grey" value="1">CL Hull</option>
-            <option class="grey" value="2">CA Hull</option>
+            <option value="2">CA Hull</option>
             <option class="grey" value="3">CVL Hull</option>
             <option value="4">BB Hull</option>
-            <option value="5">CV Hull</option>
-            <option class="grey" value="6">SS Hull</option>
+            <option class="grey" value="5">CV Hull</option>
+            <option value="6">SS Hull</option>
           </select>
         </div>
         <br/>
@@ -2082,6 +2083,7 @@ class App extends Component {
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_deck_space">Hangar Space</option>
+          <option value="ship_large_deck_space">Large Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -2099,6 +2101,7 @@ class App extends Component {
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_deck_space">Hangar Space</option>
+          <option value="ship_large_deck_space">Large Hangar Space</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -2133,7 +2136,6 @@ class App extends Component {
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_deck_space">Hangar Space</option>
-          <option value="ship_large_deck_space">Large Hangar Space</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -2151,7 +2153,6 @@ class App extends Component {
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_deck_space">Hangar Space</option>
-          <option value="ship_large_deck_space">Large Hangar Space</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Empty">Empty</option>
@@ -2318,16 +2319,12 @@ class App extends Component {
           <option value="damage_control_system_2">Damage Control 2</option>
           <option value="damage_control_system_3">Damage Control 3</option>
           <option value="reinforced_structure">Reinforced Structure</option>
-          <option class="grey" value="ship_sub_snorkel_1">Snorkel 1</option>
-          <option class="grey" value="ship_sub_snorkel_2">Snorkel 2</option>
         </select>
         <select class="equipselect" id="slot12">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_extra_fuel_tank">Fuel Tank</option>
-          <option value="damage_control_system_1">Damage Control 1</option>
-          <option value="damage_control_system_2">Damage Control 2</option>
-          <option value="damage_control_system_3">Damage Control 3</option>
-          <option value="reinforced_structure">Reinforced Structure</option>
+          <option value="ship_sub_snorkel_1">Snorkel 1</option>
+          <option value="ship_sub_snorkel_2">Snorkel 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot13">
