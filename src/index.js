@@ -1218,8 +1218,8 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_torpedo_1">Torpedo Launcher</option>
-          <option class="grey" value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option class="grey" value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option class="grey" value="ship_torpedo_2">Torpedo Launcher 2</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -1228,8 +1228,8 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_torpedo_1">Torpedo Launcher</option>
-          <option class="grey" value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option class="grey" value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option class="grey" value="ship_torpedo_2">Torpedo Launcher 2</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -1238,8 +1238,8 @@ class App extends Component {
           <option value="ship_anti_air_2">Anti-Air 2</option>
           <option value="ship_anti_air_3">Anti-Air 3</option>
           <option value="ship_anti_air_4">Anti-Air 4</option>
-          <option class="grey" value="ship_torpedo_1">Torpedo Launcher</option>
-          <option class="grey" value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option class="grey" value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option class="grey" value="ship_torpedo_2">Torpedo Launcher 2</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Empty">Empty</option>
@@ -1379,8 +1379,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
           <option value="ship_mine_layer">Minelaying Rails</option>
         </select>
@@ -1395,8 +1395,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot5">
@@ -1410,8 +1410,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot6">
@@ -1425,8 +1425,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot7">
@@ -1582,8 +1582,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
           <option value="ship_mine_layer">Minelaying Rails</option>
         </select>
@@ -1598,8 +1598,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot5">
@@ -1613,8 +1613,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot6">
@@ -1628,8 +1628,8 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_torpedo_1">Torpedo Launcher</option>
-          <option value="ship_torpedo_2">Torpedo Launcher (610)</option>
+          <option value="ship_torpedo_1">Torpedo Launcher 1</option>
+          <option value="ship_torpedo_2">Torpedo Launcher 2</option>
           <option class="grey" value="ship_airplane_launcher">Floatplane Catapult</option>
         </select>
         <select class="equipselect" id="slot7">
@@ -2263,34 +2263,34 @@ class App extends Component {
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_torpedo_sub_1">Torpedo Tubes</option>
-          <option value="ship_torpedo_sub_2">Torpedo Tubes</option>
+          <option value="ship_torpedo_sub_1">Torpedo Tubes 1</option>
+          <option value="ship_torpedo_sub_2">Torpedo Tubes 2</option>
           <option class="grey" value="ship_mine_layer_sub">Minelaying Tubes</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_torpedo_sub_1">Torpedo Tubes</option>
-          <option value="ship_torpedo_sub_2">Torpedo Tubes</option>
+          <option value="ship_torpedo_sub_1">Torpedo Tubes 1</option>
+          <option value="ship_torpedo_sub_2">Torpedo Tubes 2</option>
           <option class="grey" value="ship_mine_layer_sub">Minelaying Tubes</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_torpedo_sub_1">Torpedo Tubes</option>
-          <option value="ship_torpedo_sub_2">Torpedo Tubes</option>
+          <option value="ship_torpedo_sub_1">Torpedo Tubes 1</option>
+          <option value="ship_torpedo_sub_2">Torpedo Tubes 2</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_torpedo_sub_1">Torpedo Tubes</option>
-          <option value="ship_torpedo_sub_2">Torpedo Tubes</option>
+          <option value="ship_torpedo_sub_1">Torpedo Tubes 1</option>
+          <option value="ship_torpedo_sub_2">Torpedo Tubes 2</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
           <option class="grey" value="ship_unavailable_space">Unavailable</option>
-          <option value="ship_torpedo_sub_1">Torpedo Tubes</option>
-          <option value="ship_torpedo_sub_2">Torpedo Tubes</option>
+          <option value="ship_torpedo_sub_1">Torpedo Tubes 1</option>
+          <option value="ship_torpedo_sub_2">Torpedo Tubes 2</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Locked">Locked</option>
@@ -2306,8 +2306,8 @@ class App extends Component {
         <br/>
 
         <select class="equipselect" id="slot8">
-          <option value="ship_torpedo_sub_1">Torpedo Tubes</option>
-          <option value="ship_torpedo_sub_2">Torpedo Tubes</option>
+          <option value="ship_torpedo_sub_1">Torpedo Tubes 1</option>
+          <option value="ship_torpedo_sub_2">Torpedo Tubes 2</option>
         </select>
         <select class="equipselect" id="slot9">
           <option value="Empty">Empty</option>
