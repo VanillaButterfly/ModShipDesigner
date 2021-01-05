@@ -65,7 +65,7 @@ class App extends Component {
   
   surface_detection = [ 15, 20, 20, 20, 20, 20, 10 ];
   
-  sub_visibility = [ 0, 0, 0, 0, 0, 0, 20 ];
+  sub_visibility = [ 0, 0, 0, 0, 0, 0, 15 ];
   
   sub_detection = [ 0, 0, 0, 0, 0, 0, 0 ];
   
@@ -299,8 +299,8 @@ class App extends Component {
       convoy_escort_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
     surface_detection : {ship_surveillance_radar_1:0.25, ship_surveillance_radar_2:0.5, ship_surveillance_radar_3:0.75, ship_surveillance_radar_4:1,
       raiding_fleet_naval_manufacturer:{CV:0.2, BB:0.2, CVL:0.2, CA:0.2, CL:0.2, DD:0.2, SS:0.2}},
-    sub_visibility : {ship_unavailable_space:-0.1,
-      sub_ship_deprecated_engine:0.1, sub_ship_engine_2:-0.1, sub_ship_engine_3:-0.2, sub_ship_engine_4:-0.3,
+    sub_visibility : {ship_unavailable_space:-0.05,
+      sub_ship_engine_1:-0.05, sub_ship_engine_2:-0.1, sub_ship_engine_3:-0.15, sub_ship_engine_4:-0.2,
       ship_sub_snorkel_1:-0.1, ship_sub_snorkel_2:-0.2,
       ship_extra_fuel_tank:0.05,
       raiding_fleet_naval_manufacturer:{CV:-0.1, BB:-0.1, CVL:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
