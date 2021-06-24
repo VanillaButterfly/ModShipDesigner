@@ -161,7 +161,7 @@ class App extends Component {
     surface_detection : {ship_airplane_launcher:5},
     sub_visibility : {ship_torpedo_sub_1:1.5, ship_torpedo_sub_2:2,
       ship_mine_layer_sub:2},
-    sub_detection : {ship_airplane_launcher:3,
+    sub_detection : {ship_airplane_launcher:5,
       ship_sonar_1:6, ship_sonar_2:12, ship_sonar_3:18, ship_sonar_4:24},
     mines_planting : {ship_mine_layer:1,
       ship_mine_layer_sub:0.5},
