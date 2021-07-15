@@ -14,7 +14,7 @@ class App extends Component {
   set = 0;
 
   //Technology summary table. Contains the ids of each technology checkbox
-  tech_table = ["magnetic_detonator", "torpex", "homing_torpedo", "basic_light_shell", "improved_light_shell", "basic_medium_shell", "improved_medium_shell", "basic_heavy_shell", "improved_heavy_shell", "improved_submarine_mine_laying"]
+  tech_table = ["magnetic_fuze", "acoustic_torpedo", "torpex", "basic_light_shell", "improved_light_shell", "advanced_light_shell", "basic_heavy_shell", "improved_heavy_shell", "advanced_heavy_shell", "improved_submarine_mine_laying"]
 
   /*Hull IDs
     0 - DD
@@ -166,14 +166,14 @@ class App extends Component {
     mines_planting : {ship_mine_layer:1,
       ship_mine_layer_sub:0.5},
     mines_sweeping : {ship_mine_sweeper:1},
-    build_cost_ic : {ship_light_battery_1:50, ship_light_battery_2:100, ship_light_battery_3:150, ship_light_battery_4:250,
-      ship_light_medium_battery_1:200, ship_light_medium_battery_2:400, ship_light_medium_battery_3:600, ship_light_medium_battery_4:800,
-      ship_heavy_medium_battery_1:200, ship_heavy_medium_battery_2:400, ship_heavy_medium_battery_3:600, ship_heavy_medium_battery_4:800,
-      ship_heavy_battery_1:300, ship_heavy_battery_2:600, ship_heavy_battery_3:900, ship_heavy_battery_4:1200, 
+    build_cost_ic : {ship_light_battery_1:50, ship_light_battery_2:100, ship_light_battery_3:150, ship_light_battery_4:200,
+      ship_light_medium_battery_1:200, ship_light_medium_battery_2:300, ship_light_medium_battery_3:400, ship_light_medium_battery_4:500,
+      ship_heavy_medium_battery_1:200, ship_heavy_medium_battery_2:300, ship_heavy_medium_battery_3:400, ship_heavy_medium_battery_4:500,
+      ship_heavy_battery_1:400, ship_heavy_battery_2:600, ship_heavy_battery_3:800, ship_heavy_battery_4:1000, 
       ship_anti_air_1:30, ship_anti_air_2:60, ship_anti_air_3:90, ship_anti_air_4:120,
-      light_ship_deprecated_engine:300, light_ship_range_engine_1:300, light_ship_range_engine_2:400, light_ship_range_engine_3:500, light_ship_range_engine_4:600, light_ship_perf_engine_1:200, light_ship_perf_engine_2:300, light_ship_perf_engine_3:400, light_ship_perf_engine_4:500,
-      medium_ship_deprecated_engine:800, medium_ship_range_engine_1:800, medium_ship_range_engine_2:1100, medium_ship_range_engine_3:1400, medium_ship_range_engine_4:1700, medium_ship_perf_engine_1:500, medium_ship_perf_engine_2:800, medium_ship_perf_engine_3:1100, medium_ship_perf_engine_4:1400,
-      heavy_ship_deprecated_engine:1800, heavy_ship_range_engine_1:1800, heavy_ship_range_engine_2:2200, heavy_ship_range_engine_3:2600, heavy_ship_range_engine_4:3000, heavy_ship_perf_engine_1:1400, heavy_ship_perf_engine_2:1800, heavy_ship_perf_engine_3:2200, heavy_ship_perf_engine_4:2600,
+      light_ship_deprecated_engine:200, light_ship_range_engine_1:200, light_ship_range_engine_2:300, light_ship_range_engine_3:400, light_ship_range_engine_4:500, light_ship_perf_engine_1:300, light_ship_perf_engine_2:400, light_ship_perf_engine_3:500, light_ship_perf_engine_4:600,
+      medium_ship_deprecated_engine:600, medium_ship_range_engine_1:600, medium_ship_range_engine_2:800, medium_ship_range_engine_3:1000, medium_ship_range_engine_4:1200, medium_ship_perf_engine_1:800, medium_ship_perf_engine_2:1000, medium_ship_perf_engine_3:1200, medium_ship_perf_engine_4:1400,
+      heavy_ship_deprecated_engine:1400, heavy_ship_range_engine_1:1400, heavy_ship_range_engine_2:1700, heavy_ship_range_engine_3:2000, heavy_ship_range_engine_4:2300, heavy_ship_perf_engine_1:1700, heavy_ship_perf_engine_2:2000, heavy_ship_perf_engine_3:2300, heavy_ship_perf_engine_4:2600,
       sub_ship_deprecated_engine:60, sub_ship_engine_1:70, sub_ship_engine_2:80, sub_ship_engine_3:90, sub_ship_engine_4:100,
       ship_torpedo_1:100, ship_torpedo_2:150,
       ship_torpedo_sub_1:70, ship_torpedo_sub_2:100,
@@ -271,17 +271,15 @@ class App extends Component {
       coastal_defence_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
       Light_shell_1:{CV:0.05, BB:0.05, CVL:0.05, CA:0.05, CL:0.05, DD:0.05},
       Light_shell_2:{CV:0.05, BB:0.05, CVL:0.05, CA:0.05, CL:0.05, DD:0.05},
-      Medium_shell_1:{CL:0.05},
-      Medium_shell_2:{CL:0.05}},
+      Light_shell_3:{CV:0.05, BB:0.05, CVL:0.05, CA:0.05, CL:0.05, DD:0.05}},
     lg_armor_piercing : {},
     hg_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
       ship_fire_control_radar_1:0.1, ship_fire_control_radar_2:0.2,
       battlefleet_designer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
       coastal_defence_naval_manufacturer:{CV:0.1, BB:0.1, CVL:0.1, CA:0.1, CL:0.1, DD:0.1, SS:0.1},
-      Medium_shell_1:{CA:0.05},
-      Medium_shell_2:{CA:0.05},
-      Heavy_shell_1:{BB:0.05},
-      Heavy_shell_2:{BB:0.05}},
+      Heavy_shell_1:{BB:0.05, CA:0.05},
+      Heavy_shell_2:{BB:0.05, CA:0.05},
+      Heavy_shell_3:{BB:0.05, CA:0.05}},
     hg_armor_piercing : {},
     torpedo_attack : {ship_fire_control_system_1:0.05, ship_fire_control_system_2:0.1, ship_fire_control_system_3:0.15, ship_fire_control_system_4:0.2,
       Torpedo_1:{CA:0.3, CL:0.3, DD:0.3, SS:0.3},
@@ -792,14 +790,14 @@ class App extends Component {
      ret = ret + "&de=" + document.getElementById("desi").selectedIndex
      ret = ret + "&do=" + document.getElementById("doct").selectedIndex
 
-     if(document.getElementById("magnetic_detonator").checked == true){
-       ret = ret + "&md=1"
+     if(document.getElementById("magnetic_fuze").checked == true){
+       ret = ret + "&mf=1"
+     }
+     if(document.getElementById("acoustic_torpedo").checked == true){
+       ret = ret + "&at=1"
      }
      if(document.getElementById("torpex").checked == true){
        ret = ret + "&to=1"
-     }
-     if(document.getElementById("homing_torpedo").checked == true){
-       ret = ret + "&ht=1"
      }
 
      if(document.getElementById("improved_submarine_mine_laying").checked == true){
@@ -812,12 +810,8 @@ class App extends Component {
      if(document.getElementById("improved_light_shell").checked == true){
        ret = ret + "&ils=1"
      }
-
-     if(document.getElementById("basic_medium_shell").checked == true){
-       ret = ret + "&bms=1"
-     }
-     if(document.getElementById("improved_medium_shell").checked == true){
-       ret = ret + "&ims=1"
+     if(document.getElementById("advanced_light_shell").checked == true){
+       ret = ret + "&als=1"
      }
 
      if(document.getElementById("basic_heavy_shell").checked == true){
@@ -825,6 +819,9 @@ class App extends Component {
      }
      if(document.getElementById("improved_heavy_shell").checked == true){
        ret = ret + "&ihs=1"
+     }
+     if(document.getElementById("advanced_heavy_shell").checked == true){
+       ret = ret + "&ahs=1"
      }
 
     document.querySelector("#inputcopy").value = ret
@@ -923,20 +920,20 @@ class App extends Component {
                         <p class="tech_names">
                           <label class="bold">Torpedo</label><br/>
                           <label class="container">
-                            Magnetic detonator
-                            <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
+                            Magnetic fuze
+                            <input type="checkbox" id="magnetic_fuze" value="Torpedo_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Acoustic torpedo
+                            <input type="checkbox" id="acoustic_torpedo" value="Torpedo_2"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
                           <label class="container">
                             Torpex
-                            <input type="checkbox" id="torpex" value="Torpedo_2"></input>
-                            <span class="checkmark"></span>
-                          </label>
-                          <br/>
-                          <label class="container">
-                            Homing torpedo
-                            <input type="checkbox" id="homing_torpedo" value="Torpedo_3"></input>
+                            <input type="checkbox" id="torpex" value="Torpedo_3"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
@@ -955,29 +952,20 @@ class App extends Component {
                         <p class="tech_names">
                           <label class="bold">Light shell</label><br/>
                           <label class="container">
-                            Small caliber semi armor piercing shell
+                            High explosive-tracer shell
                             <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
                           <label class="container">
-                            Small caliber armor piercing shell
+                            Common shell
                             <input type="checkbox" id="improved_light_shell" value="Light_shell_2" ></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
-                        </p>
-                        <p class="tech_names">
-                          <label class="bold">Medium shell</label><br/>
                           <label class="container">
-                            Armor piercing capped medium shell
-                            <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
-                            <span class="checkmark"></span>
-                          </label>
-                          <br/>
-                          <label class="container">
-                            Medium caliber semi armor piercing shell
-                            <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
+                            Special common shell
+                            <input type="checkbox" id="advanced_light_shell" value="Light_shell_3"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
@@ -985,14 +973,20 @@ class App extends Component {
                         <p class="tech_names">
                           <label class="bold">Heavy shell</label><br/>
                           <label class="container">
-                            Armor piercing capped shell
+                            Semi armor piercing capped shell
                             <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
                           <label class="container">
-                            Super heavy armor piercing shell
+                            Armor piercing capped shell
                             <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Super heavy armor piercing shell
+                            <input type="checkbox" id="advanced_heavy_shell" value="Heavy_shell_3"></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
@@ -2376,13 +2370,13 @@ class App extends Component {
 
       //torp tech & mine techs
 
-      if(this.urlParams.get("md")!=null){
+      if(this.urlParams.get("mf")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
-      if(this.urlParams.get("to")!=null){
+      if(this.urlParams.get("at")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
-      if(this.urlParams.get("ht")!=null){
+      if(this.urlParams.get("to")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][6]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
 
@@ -2399,10 +2393,10 @@ class App extends Component {
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][0]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
 
-      if(this.urlParams.get("bms")!=null){
+      if(this.urlParams.get("als")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][1]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
-      if(this.urlParams.get("ims")!=null){
+      if(this.urlParams.get("ahs")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][1]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
 
