@@ -141,7 +141,7 @@ class App extends Component {
       ship_surveillance_radar_1:10, ship_surveillance_radar_2:10, ship_surveillance_radar_3:10, ship_surveillance_radar_4:10,
       ship_fire_control_radar_1:10, ship_fire_control_radar_2:10,
       ship_unarmored_hangar:100},
-    carrier_size : {ship_deck_space:10, ship_large_deck_space:30},
+    carrier_size : {ship_deck_space:10, ship_large_deck_space:40},
     lg_attack : {ship_light_battery_1:2, ship_light_battery_2:3, ship_light_battery_3:3, ship_light_battery_4:4, 
       ship_light_medium_battery_1:8, ship_light_medium_battery_2:10, ship_light_medium_battery_3:12, ship_light_medium_battery_4:14},
     lg_armor_piercing : {},
