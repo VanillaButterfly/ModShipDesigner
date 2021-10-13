@@ -120,7 +120,7 @@ class App extends Component {
       ship_airplane_launcher:0.01,
       ship_deck_space:0.05, ship_large_deck_space:0.15},
     manpower : {ship_light_battery_1:40, ship_light_battery_2:40, ship_light_battery_3:40, ship_light_battery_4:40,
-      ship_light_medium_battery_1:100, ship_light_medium_battery_2:100, ship_light_medium_battery_3:100, ship_light_medium_battery4:100,
+      ship_light_medium_battery_1:100, ship_light_medium_battery_2:100, ship_light_medium_battery_3:100, ship_light_medium_battery_4:100,
       ship_heavy_medium_battery_1:100, ship_heavy_medium_battery_2:100, ship_heavy_medium_battery_3:100, ship_heavy_medium_battery_4:100,
       ship_heavy_battery_1:160, ship_heavy_battery_2:160, ship_heavy_battery_3:160, ship_heavy_battery_4:160,
       ship_anti_air_1:20, ship_anti_air_2:20, ship_anti_air_3:20, ship_anti_air_4:20,
