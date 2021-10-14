@@ -1766,7 +1766,6 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -1779,7 +1778,6 @@ class App extends Component {
           <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
           <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
           <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
-          <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -1795,10 +1793,30 @@ class App extends Component {
           <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot6">
-          <option value="Locked">Locked</option>
+          <option value="Empty">Empty</option>
+          <option class="grey" value="ship_unavailable_space">Unavailable</option>
+          <option value="ship_anti_air_1">Anti-Air 1</option>
+          <option value="ship_anti_air_2">Anti-Air 2</option>
+          <option value="ship_anti_air_3">Anti-Air 3</option>
+          <option value="ship_anti_air_4">Anti-Air 4</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot7">
-          <option value="Locked">Locked</option>
+          <option value="Empty">Empty</option>
+          <option class="grey" value="ship_unavailable_space">Unavailable</option>
+          <option value="ship_anti_air_1">Anti-Air 1</option>
+          <option value="ship_anti_air_2">Anti-Air 2</option>
+          <option value="ship_anti_air_3">Anti-Air 3</option>
+          <option value="ship_anti_air_4">Anti-Air 4</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_deck_space">Hangar Space</option>
         </select>
 
         <div id="picdiv">
@@ -1863,7 +1881,6 @@ class App extends Component {
           <option class="grey" value="ship_medium_armor_2">Medium Armor 2</option>
           <option class="grey" value="ship_medium_armor_3">Medium Armor 3</option>
           <option class="grey" value="ship_medium_armor_4">Medium Armor 4</option>
-          <option value="ship_unarmored_hangar">Unarmored Hangar</option>
         </select>
       </div>
       ;
@@ -2126,7 +2143,6 @@ class App extends Component {
           <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -2143,7 +2159,6 @@ class App extends Component {
           <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -2160,7 +2175,6 @@ class App extends Component {
           <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="ship_deck_space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Empty">Empty</option>
@@ -2178,10 +2192,24 @@ class App extends Component {
           <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
           <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
           <option class="grey" value="ship_deck_space">Hangar Space</option>
-          <option value="ship_large_deck_space">Large Hangar Space</option>
         </select>
         <select class="equipselect" id="slot7">
-          <option value="Locked">Locked</option>
+          <option value="Empty">Empty</option>
+          <option class="grey" value="ship_unavailable_space">Unavailable</option>
+          <option value="ship_anti_air_1">Anti-Air 1</option>
+          <option value="ship_anti_air_2">Anti-Air 2</option>
+          <option value="ship_anti_air_3">Anti-Air 3</option>
+          <option value="ship_anti_air_4">Anti-Air 4</option>
+          <option class="grey" value="ship_light_battery_1">Light Battery 1</option>
+          <option class="grey" value="ship_light_battery_2">Light Battery 2</option>
+          <option class="grey" value="ship_light_battery_3">Light Battery 3</option>
+          <option class="grey" value="ship_light_battery_4">Light Battery 4</option>
+          <option value="ship_light_medium_battery_1">Light Cruiser Battery 1</option>
+          <option value="ship_light_medium_battery_2">Light Cruiser Battery 2</option>
+          <option value="ship_light_medium_battery_3">Light Cruiser Battery 3</option>
+          <option value="ship_light_medium_battery_4">Light Cruiser Battery 4</option>
+          <option class="grey" value="ship_deck_space">Hangar Space</option>
+          <option value="ship_large_deck_space">Large Hangar Space</option>
         </select>
 
         <div id="picdiv">
@@ -2253,7 +2281,6 @@ class App extends Component {
           <option class="grey" value="ship_heavy_armor_2">Heavy Armor 2</option>
           <option class="grey" value="ship_heavy_armor_3">Heavy Armor 3</option>
           <option class="grey" value="ship_heavy_armor_4">Heavy Armor 4</option>
-          <option value="ship_unarmored_hangar">Unarmored Hangar</option>
         </select>
       </div>
       ;
