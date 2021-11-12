@@ -248,7 +248,7 @@ class App extends Component {
       ship_medium_armor_1:-0.03, ship_medium_armor_2:-0.04, ship_medium_armor_3:-0.05, ship_medium_armor_4:-0.06,
       ship_heavy_armor_1:-0.06, ship_heavy_armor_2:-0.08, ship_heavy_armor_3:-0.1, ship_heavy_armor_4:-0.12,
       ship_anti_air_1:-0.005, ship_anti_air_2:-0.01, ship_anti_air_3:-0.015, ship_anti_air_4:-0.02,
-      ship_torpedo_1:-0.02, ship_torpedo_2:-0.02,
+      ship_torpedo_1:-0.02, ship_torpedo_2:-0.03,
       ship_torpedo_sub_1:-0.02, ship_torpedo_sub_2:-0.02,
       ship_mine_layer:-0.02,
       ship_mine_layer_sub:-0.02,
