@@ -704,6 +704,38 @@ class App extends Component {
         }
       }
     }
+	  
+    if (cla == "CA") {
+      if (
+        Object.keys(equ).indexOf("ship_light_medium_battery_1") != -1 ||
+        Object.keys(equ).indexOf("ship_light_medium_battery_2") != -1 ||
+        Object.keys(equ).indexOf("ship_light_medium_battery_3") != -1 ||
+        Object.keys(equ).indexOf("ship_light_medium_battery_4") != -1
+      ) {
+        document.getElementById("is_cruiser_valid").innerHTML =
+          "This cruiser is invalid";
+      } else {
+        document.getElementById("is_cruiser_valid").innerHTML = "";
+      }
+    } else {
+      document.getElementById("is_cruiser_valid").innerHTML = "";
+    }
+    
+    if (cla == "CL") {
+      if (
+        Object.keys(equ).indexOf("ship_heavy_medium_battery_1") != -1 ||
+        Object.keys(equ).indexOf("ship_heavy_medium_battery_2") != -1 ||
+        Object.keys(equ).indexOf("ship_heavy_medium_battery_3") != -1 ||
+        Object.keys(equ).indexOf("ship_heavy_medium_battery_4") != -1
+      ) {
+        document.getElementById("is_cruiser_valid").innerHTML =
+          "This cruiser is invalid";
+      } else {
+        document.getElementById("is_cruiser_valid").innerHTML = "";
+      }
+    } else {
+      document.getElementById("is_cruiser_valid").innerHTML = "";
+    }
 
     // Writes all the values into the html for the user to see
 
@@ -886,6 +918,9 @@ class App extends Component {
             <option class="grey" value="5">CV Hull</option>
             <option value="6">SS Hull</option>
           </select>
+        </div>
+	<div class="icv_div">
+          <label id="is_cruiser_valid"></label>
         </div>
         <br/>
         <br/>
